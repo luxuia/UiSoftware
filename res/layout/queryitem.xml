@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="#1BA1E2"
+    android:orientation="horizontal" >
+
+    <TextView android:id="@+id/item1" android:text="项目名\n时间"
+        android:textSize="20.0sp" android:gravity="center"
+        android:layout_width="100.0dip" android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="220.0dip"
+        android:layout_height="wrap_content"
+        android:background="#1BA1E2"
+        android:orientation="horizontal" >
+
+        <TextView android:id="@+id/item2" android:text="LEU"
+            android:textColor="@android:color/black" android:textSize="20.0sp"
+            android:singleLine="true" android:gravity="center"
+			android:focusable="false"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"></TextView>
+        <TextView android:id="@+id/item3" android:text="NIT"
+            android:textSize="20.0sp" android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+           ></TextView>
+        <TextView android:id="@+id/item4" android:text="UBG"
+            android:textColor="@android:color/black" android:textSize="20.0sp"
+            android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+          ></TextView>
+        <TextView android:id="@+id/item5" android:text="PRO"
+            android:textSize="20.0sp" android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+           ></TextView>
+        <TextView android:id="@+id/item6" android:text="PH"
+            android:textColor="@android:color/black" android:textSize="20.0sp"
+            android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+          ></TextView>
+        <TextView android:id="@+id/item7" android:text="SG"
+            android:textSize="20.0sp" android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+            ></TextView>
+        <TextView android:id="@+id/item8" android:text="KET"
+            android:textColor="@android:color/black" android:textSize="20.0sp"
+            android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+           ></TextView>
+        <TextView android:id="@+id/item9" android:text="BIL"
+            android:textSize="20.0sp" android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+            ></TextView>
+        <TextView android:id="@+id/item10" android:text="GLU"
+            android:textSize="20.0sp" android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+            ></TextView>
+        <TextView android:id="@+id/item11" android:text="VC"
+            android:textSize="20.0sp" android:singleLine="true" android:gravity="center"
+            android:layout_width="50.0dip" android:layout_height="wrap_content"
+            android:focusable="false"
+           ></TextView>
+    </LinearLayout>
+</LinearLayout>

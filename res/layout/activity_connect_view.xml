@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       
+       <RelativeLayout
+           android:id="@+id/BTleft_content"
+           android:layout_width="0dip"
+           android:layout_height="match_parent"
+           android:layout_margin="5dip"
+           android:layout_marginRight="0dip"
+           android:layout_weight="3"
+           android:background="#BBF09609"
+           android:orientation="vertical" >
+           
+           <TextView
+               android:id="@+id/text_BTlist"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:text="蓝牙设备列表" >
+			</TextView>
+
+           <LinearLayout
+               
+               android:id="@+id/left_bottom"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"
+               android:orientation="horizontal" >
+
+            	<TextView
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_margin="3dip"
+            	    android:text="当前设备" >
+				</TextView>
+
+            	<TextView
+            	    android:id="@+id/bluetooth_selected"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_margin="3dip"
+            	    android:text="Bluetooth?" >
+
+            	</TextView>
+           
+           </LinearLayout>
+           
+           <LinearLayout
+			    android:orientation="vertical"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_below="@id/text_BTlist"
+			    android:layout_above="@id/left_bottom"
+			    
+			    >
+			    <TextView android:id="@+id/title_paired_devices"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Paired_devices"
+			        android:visibility="gone"
+			        android:background="#666"
+			        android:textColor="#fff"
+			        android:paddingLeft="5dp"
+			    />
+			    <ListView android:id="@+id/paired_devices"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:stackFromBottom="true"
+			        android:layout_weight="1"
+			        
+			 
+			    />
+			    
+			    <!--  
+			    <TextView android:id="@+id/title_new_devices"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="OtherDevicess"
+			        android:visibility="gone"
+			        android:background="#666"
+			        android:textColor="#fff"
+			        android:paddingLeft="5dp"
+			    />
+			    <ListView android:id="@+id/new_devices"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:stackFromBottom="true"
+			        android:layout_weight="2"
+			    />
+			    -->
+			  
+			</LinearLayout>
+           
+           
+       </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="0dip"
+           android:layout_height="match_parent"
+           android:layout_margin="5dip"
+           android:layout_weight="1"
+           android:background="#BB996600"
+           android:orientation="vertical" >
+
+           <ToggleButton
+               android:id="@+id/bluetooth_state"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textOff="蓝牙关闭"
+               android:textOn="蓝牙开启" />
+           
+           <Button
+               android:id="@+id/bluetooth_searchbutton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="搜索" />
+
+           <Button
+               android:id="@+id/bluetooth_connectbutton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:text="连接" />
+       </LinearLayout>
+   
+   </LinearLayout>
+    
+</LinearLayout>
